@@ -1,0 +1,178 @@
+.container {
+    background-image: linear-gradient(to right, #A74AC7, pink, #C2E5D3, #5865F2);
+}
+
+.APP-logo {
+    width: 50px;
+    height: 40px;
+
+}
+
+.name-logo-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+
+}
+
+#navItem1 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem2 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem3 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem4 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+.Login-bg-container {
+    background-image: linear-gradient(to top, #4169E1, #ffa6b7);
+    height: 100vh;
+    font-family: "Roboto";
+    padding-top: 150px;
+}
+
+.heading {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.input-label {
+    color: #ffffff;
+}
+
+.error-Msg {
+    color: #ff0000;
+}
+
+
+.main-img {
+    margin-bottom: 30px;
+    width: 300px;
+
+    text-align: center;
+}
+
+.wiki-search-header {
+    background-color: skyblue;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d5cdcd;
+    padding: 50px;
+    margin-bottom: 40px;
+    background-image: linear-gradient(to right, #EDE6D6, #FBFBF9, #FFF9E3, #EAEEE9);
+
+}
+
+.search-input {
+
+    border-radius: 3px;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d5cdcd;
+    font-size: 18px;
+}
+
+.About-container {
+    background-color: gray;
+    padding: 30px;
+    font-family: "Roboto";
+font-size:30px;
+    background-image: linear-gradient(to right, #8A2BE2, #BC8F8F);
+}
+
+.about-head {
+    text-align: center;
+}
+.about-img{
+    border-radius:10px;
+    width:300px;
+    height:180px;
+}
+
+.footer-sec {
+    background-color: #959ead;
+    background-size: cover;
+    background-image: linear-gradient(to right, #7D0552, #6C2DC7, #E238EC);
+
+}
+
+.image {
+    width: 60px;
+    height: 40px;
+
+}
+
+.footer-icon-container {
+    background-color: #202b36;
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+    margin: 10px;
+    padding-top: 22px;
+    padding-bottom: 15px;
+    padding-right: 16px;
+    padding-left: 22px;
+    font-family: "Roboto";
+}
+
+.icon {
+    color: #5a7184;
+    font-size: 30px;
+}
+
+.para {
+    color: #F2D4D7;
+    text-align: left;
+    font-family: "Roboto";
+}
+
+.heading {
+    color: #5a7184;
+}
+
+.hr-line {
+    color: #5a7184;
+}
+
+.spinner-container {
+    background-image: linear-gradient(to right, #EDE6D6, #FBFBF9, #FFF9E3, #EAEEE9);
+    overflow: auto;
+    /*border: 2px solid blue;*/
+    height: 200px;
+    width: 100%;
+}
+
+.search-results {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.result-item {
+    margin-bottom: 20px;
+}
+
+.result-title {
+    font-size: 22px;
+}
+
+.link-description {
+    font-size: 15px;
+    color: #444444;
+}
+
+.result-url {
+    color: #006621;
+    text-decoration: none;
+}
