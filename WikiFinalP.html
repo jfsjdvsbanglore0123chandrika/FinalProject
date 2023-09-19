@@ -2,16 +2,22 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="finalcode.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Search Website</title>
+    <link rel="stylesheet" href="finalcodeStyles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
-    <script src="myscripts.js"></script>
+    
 </head>
 
 <body>
+    <div class="scroll-up-btn show">
+        <i class="fas fa-angle-up"></i>
+    </div>
 <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
@@ -45,16 +51,17 @@
         <form class="p-5 d-flex justify-content-center flex-column align-items-center" id="LoginForm">
             <div>
                 <label class="input-label">Email/Username</label>
-                <input type="text" id="Username" class="form-control" placeholder="Enter Name" />
+                <input type="text" id="Username" class="form-control" placeholder="Enter Name" required/>
                 <p class="error-Msg" id="UsernameErrMsg"></p>
             </div>
             <div>
                 <label class="input-label">Password</label>
-                <input type="password" id="Password" class="form-control" placeholder="Enter password" />
+                <input type="password" id="Password" class="form-control" placeholder="Enter password" required/>
                 <p class="error-Msg" id="PasswordErrMsg"></p>
             </div>
             <div class="text-center p-3">
                 <button class="btn btn-primary" onclick="display('Home-section')">Login</button>
+                <span class="psw">Forgot <a href="#Login-section">password?</a></span>
             </div>
         </form>
     </div>
@@ -79,14 +86,22 @@
     </div>
 
     <!--About Section-->
+    <section>
     <div class="About-container" id="about-section">
-
         <h1 class="about-head">About</h1>
-        <div class="d-flex flex-row">
-            <img src="C:\Users\User\OneDrive\Desktop\JavaFSD(Free)\Chandrika Final Project\wikibluegirl.jpg" class="about-img"/>
-            <p>Wikipedia is the largest and most-read reference work in history, and has consistently been one of the 10 most popular websites. <strong>AboutUs.com</strong> is a wiki Internet domain directory. It lists websites along with information about their content. As a wiki, AboutUs allows Internet users to add entries or modify information. AboutUs.com has since become a wiki for more than just websites. The site now allows pages to be created for people, places, and almost anything else.</p>
+            <div class="d-flex flex-row col-10 justify-content-center">
+                <div><img src="C:\Users\User\OneDrive\Desktop\JavaFSD(Free)\Chandrika Final Project\wikibluegirl.jpg" class="about-img"/></div>
+                <div>
+                    <p>Wikipedia is the largest and most-read reference work in history, and has consistently been one of the 10 most popular websites. <strong>AboutUs.com</strong> is a wiki Internet domain directory. It lists websites along with information about their content. As a wiki, AboutUs allows Internet users to add entries or modify information. AboutUs.com has since become a wiki for more than just websites. The site now allows pages to be created for people, places, and almost anything else.</p>
+                    <a href="https://en.wikipedia.org/wiki/Wikipedia:About">Read More<i class="fa fa-arrow-right"></i></a>
+                </div>
+        </div>
+        <div class="flex flex-row justify-content-end align-items-center p-30">
+            
         </div>
     </div>
+
+</section>
 
     <!--FollowUsSection-->
     <footer>
@@ -97,7 +112,7 @@
             </div>
             <div class="d-flex flex-row justify-content-center">
                 <div class="footer-icon-container">
-                    <i class="fab fa-google icon"></i>
+                    <a href="https://www.google.com/"><i class="fab fa-google icon"></i></a>
                 </div>
                 <div class="footer-icon-container">
                     <i class="fab fa-twitter icon"></i>
@@ -106,10 +121,9 @@
                     <i class="fab fa-instagram icon"></i>
                 </div>
                 <div class="footer-icon-container">
-                    <i class="fab fa-linkedin icon"></i>
+                    <a href="https://www.linkedin.com/in/chandrika-buyyala-a47596223/"><i class="fab fa-linkedin icon"></i></a>
                 </div>
             </div>
-            <!--<p class="para">37,Ayur Vigyan Nagar,New Delhi,India.</p>-->
         </div>
 
         <div class="p-3 footer-sec">
@@ -126,13 +140,20 @@
         </div>
 
         <div class=" icon footer-sec text-center">
-            <i class="far fa-copyright">2023 by Chandrika, Created with Bootstrap.</i>
+            <i class="far fa-copyright">2023 by <a href="https://www.codingindia.com">Chandrika</a> , Created with Bootstrap.</i>
         </div>
         <div class="col-12">
             <hr class="hr-line" />
         </div>
     </footer>
-</div>
-</body>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top &#8593;</button>
+
+</div>
+
+
+
+<script src="myscripts.js"></script>
+
+</body>
 </html>
